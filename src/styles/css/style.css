@@ -7,23 +7,27 @@
   font-family: Roboto;
   src: url("../../fonts/Roboto-Bold.ttf");
 }
+
 @font-face {
   font-weight: 500;
   font-family: Roboto;
   src: url("../../fonts/Roboto-Medium.ttf");
 }
+
 @font-face {
   font-weight: 400;
   font-family: Roboto;
   src: url("../../fonts/Roboto-Regular.ttf");
 }
+
 html {
-  font-family: Roboto, sans-serif;
+  color: #cacaca;
   font-weight: 400;
   font-size: 1rem;
+  font-family: Roboto, sans-serif;
   line-height: 1.5rem;
   text-transform: inherit;
-  color: #cacaca;
+
   background-color: black;
 }
 
@@ -44,6 +48,7 @@ h1 {
   line-height: 5.625rem;
   text-transform: uppercase;
 }
+
 @media (max-width: 425px) {
   h1 {
     font-weight: 700;
@@ -59,6 +64,7 @@ h2 {
   line-height: 3.5625rem;
   text-transform: uppercase;
 }
+
 @media (max-width: 425px) {
   h2 {
     font-weight: 700;
@@ -75,6 +81,7 @@ ul {
 input,
 input::placeholder {
   color: inherit;
+
   border: none;
 }
 
@@ -91,11 +98,14 @@ a {
 
 .sr-only {
   position: absolute;
+
   width: 1px;
   height: 1px;
   padding: 0;
   overflow: hidden;
+
   white-space: nowrap;
+
   border: 0;
 }
 
@@ -134,54 +144,64 @@ a {
 .header {
   position: absolute;
   top: 1.5625rem;
-  left: 0;
   right: 0;
+  left: 0;
+
   font-weight: 400;
   font-size: 0.6875rem;
   line-height: 1rem;
   text-transform: uppercase;
 }
+
 .header .nav-menu ul > * {
   margin-left: 1.5rem;
 }
+
 .header .logo {
   margin-right: 4.125rem;
 }
+
 .header .logo-image {
   width: 1.5rem;
   margin-right: 1rem;
 }
+
 .header .logo-title {
   padding: 0.3125rem 0;
 }
+
 .header .search-input {
   min-width: 15.5rem;
   height: 1.5625rem;
-  padding: 0 0.625rem;
   margin: 0 0 0 auto;
+  padding: 0 0.625rem;
+
   color: #fff;
+
   background: #3c3b3d;
   border: none;
   border-radius: 3.125rem;
 }
+
 .header .search-input::placeholder {
   color: #757575;
   text-transform: uppercase;
 }
+
 @media (max-width: 425px) {
   .header .nav-menu ul {
     flex-direction: column;
   }
+
   .header .nav-menu ul li {
     margin-bottom: 0.1875rem;
     margin-left: 0;
   }
 }
+
 @media (max-width: 768px) {
   .header > * {
     flex: 1 1 100%;
     margin-bottom: 1.0625rem;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

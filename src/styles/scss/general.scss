@@ -21,11 +21,12 @@
 }
 
 html {
+  color: $dark-gray;
   font-family: Roboto, sans-serif;
 
-  @include set-typography($rem-base, 24px);
-  color: $dark-gray;
   background-color: black;
+
+  @include set-typography($rem-base, 24px);
 }
 
 body,
@@ -62,6 +63,7 @@ ul {
 input,
 input::placeholder {
   color: inherit;
+
   border: none;
 }
 
