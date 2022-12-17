@@ -7,19 +7,181 @@
   font-family: Roboto;
   src: url("../../fonts/Roboto-Bold.ttf");
 }
-
 @font-face {
   font-weight: 500;
   font-family: Roboto;
   src: url("../../fonts/Roboto-Medium.ttf");
 }
-
 @font-face {
   font-weight: 400;
   font-family: Roboto;
   src: url("../../fonts/Roboto-Regular.ttf");
 }
-
 html {
   font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-transform: inherit;
+  color: #cacaca;
+  background-color: black;
 }
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3.75rem;
+  line-height: 5.625rem;
+  text-transform: uppercase;
+}
+@media (max-width: 425px) {
+  h1 {
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.8125rem;
+    text-transform: uppercase;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.375rem;
+  line-height: 3.5625rem;
+  text-transform: uppercase;
+}
+@media (max-width: 425px) {
+  h2 {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    text-transform: uppercase;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+input::placeholder {
+  color: inherit;
+  border: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 77.5rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-self-right {
+  align-self: right;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-dark-gray {
+  color: #cacaca;
+}
+
+.header {
+  position: absolute;
+  top: 1.5625rem;
+  left: 0;
+  right: 0;
+  font-weight: 400;
+  font-size: 0.6875rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+.header .nav-menu ul > * {
+  margin-left: 1.5rem;
+}
+.header .logo {
+  margin-right: 4.125rem;
+}
+.header .logo-image {
+  width: 1.5rem;
+  margin-right: 1rem;
+}
+.header .logo-title {
+  padding: 0.3125rem 0;
+}
+.header .search-input {
+  min-width: 15.5rem;
+  height: 1.5625rem;
+  padding: 0 0.625rem;
+  margin: 0 0 0 auto;
+  color: #fff;
+  background: #3c3b3d;
+  border: none;
+  border-radius: 3.125rem;
+}
+.header .search-input::placeholder {
+  color: #757575;
+  text-transform: uppercase;
+}
+@media (max-width: 425px) {
+  .header .nav-menu ul {
+    flex-direction: column;
+  }
+  .header .nav-menu ul li {
+    margin-bottom: 0.1875rem;
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .header > * {
+    flex: 1 1 100%;
+    margin-bottom: 1.0625rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

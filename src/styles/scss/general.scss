@@ -22,4 +22,57 @@
 
 html {
   font-family: Roboto, sans-serif;
+
+  @include set-typography($rem-base, 24px);
+  color: $dark-gray;
+  background-color: black;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  @include set-typography(60px, 90px, 700, uppercase);
+
+  @include set-media(sm) {
+    @include set-typography(30px, 45px, 700, uppercase);
+  }
+}
+
+h2 {
+  @include set-typography(38px, 57px, 700, uppercase);
+
+  @include set-media(sm) {
+    @include set-typography(18px, 27px, 700, uppercase);
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+input::placeholder {
+  color: inherit;
+  border: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: px-to-rem(1240px);
+
+  margin: 0 auto;
+  padding: 0 px-to-rem(20px);
 }

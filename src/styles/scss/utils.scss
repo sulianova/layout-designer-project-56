@@ -13,8 +13,25 @@
   @return #{$rem-list};
 }
 
+@mixin set-typography(
+  $font-size,
+  $line-height: $font-size,
+  $font-weight: 400,
+  $text-transform: inherit
+) {
+  font-weight: $font-weight;
+  font-size: px-to-rem($font-size);
+  line-height: px-to-rem($line-height);
+  text-transform: $text-transform;
+}
+
 @mixin set-media($type) {
   @media (max-width: map-get($breakpoints, $type)) {
     @content;
   }
+}
+
+@mixin set-bg-image($image-name, $extend) {
+  background: url("../../images/#{$image-name}.#{$extend}") no-repeat center;
+  background-size: cover;
 }
