@@ -1,0 +1,20 @@
+@use "sass:math";
+@use "sass:list";
+@use "sass:map";
+
+@function px-to-rem($list) {
+  $rem-list: ();
+
+  @each $value in $list {
+    $rem-value: math.div($value, $rem-base) * 1rem;
+    $rem-list: append($rem-list, $rem-value);
+  }
+
+  @return #{$rem-list};
+}
+
+@mixin set-media($type) {
+  @media (max-width: map-get($breakpoints, $type)) {
+    @content;
+  }
+}
