@@ -1,0 +1,39 @@
+.form {
+  max-width: px-to-rem(570px);
+
+  margin: 0 auto 0;
+
+  &-input {
+    flex: 1 1 px-to-rem(270px);
+    min-width: px-to-rem(270px);
+    min-height: px-to-rem(50px);
+
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    padding: 0 0 0 px-to-rem(20px);
+
+    color: $white;
+
+    background: transparent;
+    border: px-to-rem(2px) solid $dark-gray;
+    border-radius: px-to-rem(3px);
+
+  }
+
+  &-input:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+
+  @include set-media(sm) {
+    flex-wrap: wrap;
+
+    &-input:not(:last-child) {
+      margin-right: 0;
+    }
+
+    &-input:last-child {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}

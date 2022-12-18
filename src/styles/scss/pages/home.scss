@@ -1,0 +1,30 @@
+.home-page-description {
+  padding: px-to-rem(200px) 0;
+
+  @include set-bg-image(banner, png);
+
+  @include set-media(sm) {
+    padding: px-to-rem(250px) 0 px-to-rem(200px) 0;
+  }
+
+  p {
+    margin-top: px-to-rem(31px);
+
+    @include set-media(sm) {
+      margin-top: px-to-rem(16px);
+    }
+  }
+
+  &-btn {
+    flex: 1 1 px-to-rem(570px);
+    max-width: px-to-rem(570px);
+    min-height: px-to-rem(57px);
+    margin: 0;
+
+    @include set-typography(13.3px, 15px, normal, uppercase);
+
+    @include set-media(sm) {
+      margin-top: 1.5rem;
+    }
+  }
+}

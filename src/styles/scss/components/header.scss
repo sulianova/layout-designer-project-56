@@ -10,6 +10,18 @@ $header-placeholder: #757575;
     margin-left: px-to-rem(24px);
   }
 
+  .nav-menu a{
+    &:hover {
+      color: #fff;
+      cursor: pointer;
+    }
+
+    &:active {
+      color: #fff;
+    }
+
+  }
+
   @include set-typography(11px, 16px, 400, uppercase);
 
   .logo {
@@ -20,7 +32,7 @@ $header-placeholder: #757575;
     }
 
     &-title {
-      padding: px-to-rem(5px) 0;
+      padding: 0;
     }
   }
 
@@ -28,7 +40,7 @@ $header-placeholder: #757575;
     min-width: px-to-rem(248px);
     height: px-to-rem(25px);
 
-    padding: 0 px-to-rem(10px);
+    padding: px-to-rem(5px) px-to-rem(10px);
     margin: 0 0 0 auto;
 
     color: $white;
@@ -48,7 +60,6 @@ $header-placeholder: #757575;
       flex-direction: column;
 
       li {
-        margin-bottom: px-to-rem(3px);
         margin-left: 0;
       }
     }
@@ -57,8 +68,13 @@ $header-placeholder: #757575;
   @include set-media(md) {
     & > * {
       flex: 1 1 100%;
+    }
+    .logo {
+      margin-bottom: px-to-rem(16px);
+    }
 
-      margin-bottom: px-to-rem(17px);
+    .nav-menu {
+      margin-bottom: px-to-rem(18px);
     }
   }
 }

@@ -1,0 +1,25 @@
+$btn-colors: (
+  'green': $green,
+  'red': $red,
+  'purple': $purple,
+);
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-transform: uppercase;
+  background: none;
+
+  border: none;
+  border-radius: px-to-rem(5px);
+  cursor: pointer;
+}
+
+@each $color-name, $color in $btn-colors {
+  .btn-#{$color-name} {
+    color: $white;
+    background: $color;
+  }
+}

@@ -15,11 +15,11 @@
   <header class="header container d-flex align-items-center flex-wrap">
     <div class="logo d-flex align-items-center">
       <img class="logo-image" src="images/logo.svg" alt="Логотип Music Box" />
-      <span class="logo-title color-white">music box</span>
+      <span class="logo-title color-white align-items-center">music box</span>
     </div>
     <nav class="nav-menu">
       <ul class="d-flex color-dark-gray">
-        <li><a href="index.html" class="color-white">главная</a></li>
+        <li><a href="index.html">главная</a></li>
         <li><a href="artist.html">каталог</a></li>
         <li><a href="artist.html">исполнители</a></li>
         <li><a href="artist.html">контакты</a></li>
@@ -28,6 +28,23 @@
     <input name="search" id="search" class="search-input" type="search" placeholder="поиск..." />
     <label class="sr-only" for="search">поиск по сайту</label>
   </header>
+
+  <section class="home-page-description" id="page-description">
+    <div class="container color-white text-center">
+      <h1>Онлайн музыка где угодно</h1>
+      <h2>без ограничений</h2>
+      <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+      <form class="d-flex form">
+        <label class="sr-only" for="username">Введите имя</label>
+        <input class="form-input" id="username" type="text" placeholder="Имя">
+        <label class="sr-only" for="email">Введите почту</label>
+        <input class="form-input" id="email" type="email" placeholder="Email">
+      </form>
+      <div class="d-flex justify-content-center">
+        <button class="btn btn-green home-page-description-btn" type="submit">Получить доступ</button>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>

@@ -7,7 +7,8 @@
 
   @each $value in $list {
     $rem-value: math.div($value, $rem-base) * 1rem;
-    $rem-list: append($rem-list, $rem-value);
+    $rem-value-rounded: math.div(math.round($rem-value * 1000), 1000);
+    $rem-list: append($rem-list, $rem-value-rounded);
   }
 
   @return #{$rem-list};
