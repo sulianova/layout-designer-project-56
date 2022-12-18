@@ -1,0 +1,33 @@
+.card {
+  padding: 0 1.5rem;
+
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+
+  &-title {
+    padding: 1.5rem 0 px-to-rem(200px);
+  }
+
+  &-price {
+    @include set-typography(64px, 64px, 400);
+  }
+
+  .currency {
+    @include set-typography(32px, 48px, 400, uppercase);
+    padding-left: 1rem;
+  }
+
+  .describtion {
+    @include set-typography(12.9px, 19.4px, 400);
+    margin: 4rem 0;
+  }
+
+  @include set-media(sm) {
+
+    &-title {
+      @include set-typography(16px, 24px, 400, uppercase);
+      padding: 1rem 0 px-to-rem(200px);
+    }
+  }
+}

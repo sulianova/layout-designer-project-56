@@ -2,6 +2,14 @@
 @use "sass:list";
 @use "sass:map";
 
+@mixin set-card-bg {
+  @each $class, $name in $subscriptions {
+    .bg-#{$class} {
+      @include set-bg-image($name, "png");
+    }
+  }
+}
+
 @function px-to-rem($list) {
   $rem-list: ();
 

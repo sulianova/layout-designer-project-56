@@ -24,7 +24,7 @@ html {
   color: $dark-gray;
   font-family: Roboto, sans-serif;
 
-  background-color: black;
+  background-color: $black;
 
   @include set-typography($rem-base, 24px);
 }
@@ -56,6 +56,10 @@ h2 {
   }
 }
 
+h3 {
+  @include set-typography(24px, 36px, 400, uppercase);
+}
+
 ul {
   list-style: none;
 }
@@ -77,4 +81,10 @@ a {
 
   margin: 0 auto;
   padding: 0 px-to-rem(20px);
+}
+
+.main-content {
+  padding-bottom: px-to-rem(100px);
+
+  color: $white;
 }

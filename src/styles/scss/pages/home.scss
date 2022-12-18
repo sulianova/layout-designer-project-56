@@ -28,3 +28,37 @@
     }
   }
 }
+
+.page-pricing {
+  .flex-container {
+    column-gap: px-to-rem(50px);
+    row-gap: px-to-rem(50px);
+
+    & > * {
+      max-width: px-to-rem(366px);
+
+      @include set-media(sm) {
+        max-width: px-to-rem(374px);
+      }
+    }
+
+    @include set-media(sm) {
+      justify-content: center;
+    }
+  }
+
+  @include set-card-bg();
+
+  &-btn {
+    flex: 1 1 px-to-rem(326px);
+    max-width: px-to-rem(326px);
+    min-height: px-to-rem(66px);
+
+    margin: 2.5rem 0 0 0;
+
+    background: transparent;
+    border: px-to-rem(1px) solid $white;
+
+    @include set-typography(16px, 24px, normal, uppercase);
+  }
+}

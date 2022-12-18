@@ -21,6 +21,18 @@
 
 /* position */
 
+.pt-100 {
+  padding-top: px-to-rem(100px);
+}
+
+.pt-40 {
+  padding-top: px-to-rem(40px);
+}
+
+.pb-50 {
+  padding-bottom: px-to-rem(50px);
+}
+
 /* style */
 .color-white {
   color: $white;
@@ -46,4 +58,8 @@
 /* typography */
 .text-center {
   text-align: center;
+}
+
+.to-uppercase {
+  text-transform: uppercase;
 }
