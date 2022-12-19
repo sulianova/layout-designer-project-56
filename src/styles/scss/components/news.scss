@@ -1,0 +1,39 @@
+.news-body {
+
+  display: flex;
+  flex-direction: column;
+
+  p {
+    margin-top: px-to-rem(30px);
+
+    @include set-media(sm) {
+      margin-top: px-to-rem(16px);
+    }
+  }
+
+  color: $dark-gray;
+
+  &-title {
+    color: $white;
+    @include set-typography(30px, 45px, normal, capitalize);
+
+    @include set-media(sm) {
+      margin-top: px-to-rem(48px);
+      @include set-typography(16px, 26px, normal, capitalize);
+    }
+  }
+
+  &-footer {
+    @include set-typography(12px, 19px, normal);
+    padding-bottom: px-to-rem(48px);
+    margin-top: px-to-rem(24px);
+
+    @include set-media(sm) {
+      margin-top: px-to-rem(24px);
+    }
+
+    & > * {
+      margin-right: px-to-rem(16px);
+    }
+  }
+}
