@@ -1,0 +1,56 @@
+.footer {
+  @include set-bg-gradient($purple, $red);
+
+  a {
+    @include set-typography(16px, 24px);
+    font-style: normal;
+  }
+
+  & .column-links {
+    & .links-container {
+      @include set-links-container(20px, 24px, 200px);
+      padding: 3rem 0;
+
+      @media (max-width: 425px) {
+        @include set-links-container(20px, 16px, 200px);
+      }
+
+      .footer-title {
+        @include set-typography(18px, 27px, 700, uppercase);
+        display: inline-block;
+        padding: px-to-rem(15px) 0;
+      }
+
+      li {
+        white-space: nowrap;
+      }
+
+      img {
+        margin-right: 1.2rem;
+      }
+    }
+  }
+
+  hr {
+    margin: 0;
+
+    border: px-to-rem(1px) solid $dark-gray;
+    border-radius: 0;
+  }
+
+  & .bottom-links ul {
+    padding: 2rem 0;
+
+    @include set-media(md) {
+      flex-direction: column;
+    }
+
+    li:not(:last-child) {
+      margin-right: 1rem;
+
+      @include set-media(md) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

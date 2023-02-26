@@ -14,3 +14,4 @@ rules:
   at-rule-no-unknown: null
   scss/no-global-function-names: null
   scss/at-rule-no-unknown: true
+  no-descending-specificity: null

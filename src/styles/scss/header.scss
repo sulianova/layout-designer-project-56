@@ -3,29 +3,30 @@ $header-placeholder: #757575;
 .header {
   position: absolute;
   top: px-to-rem(25px);
-  left: 0;
   right: 0;
+  left: 0;
 
   .nav-menu ul > * {
     margin-left: px-to-rem(24px);
   }
 
-  .nav-menu a{
+  .nav-menu a {
     &:hover {
       color: #fff;
+
       cursor: pointer;
     }
 
     &:active {
       color: #fff;
     }
-
   }
 
   @include set-typography(11px, 16px, 400, uppercase);
 
   .logo {
     margin-right: px-to-rem(66px);
+
     &-image {
       width: px-to-rem(24px);
       margin-right: px-to-rem(16px);
@@ -39,9 +40,9 @@ $header-placeholder: #757575;
   .search-input {
     min-width: px-to-rem(248px);
     height: px-to-rem(25px);
+    margin: 0 0 0 auto;
 
     padding: px-to-rem(5px) px-to-rem(10px);
-    margin: 0 0 0 auto;
 
     color: $white;
 
@@ -69,6 +70,7 @@ $header-placeholder: #757575;
     & > * {
       flex: 1 1 100%;
     }
+
     .logo {
       margin-bottom: px-to-rem(16px);
     }

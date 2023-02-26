@@ -37,10 +37,23 @@
   background-size: cover;
 }
 
+@mixin set-bg-gradient($color-1, $color-2) {
+  background: linear-gradient(89.75deg, $color-1 32.83%, $color-2 81.56%);
+}
+
 @mixin set-card-bg {
   @each $class, $name in $subscriptions {
     .bg-#{$class} {
       @include set-bg-image($name, "png");
     }
+  }
+}
+
+@mixin set-links-container($x, $y, $item-size) {
+  margin: 0 px-to-rem(-$x);
+
+  & > * {
+    flex: 1 1 $item-size;
+    margin: 0 px-to-rem($x) px-to-rem($y);
   }
 }

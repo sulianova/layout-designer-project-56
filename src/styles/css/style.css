@@ -134,6 +134,10 @@ a {
   justify-content: center;
 }
 
+.justify-content-between {
+  justify-content: space-between;
+}
+
 .flex-column {
   flex-direction: column;
 }
@@ -372,6 +376,165 @@ a {
   margin-right: 1rem;
 }
 
+.header {
+  position: absolute;
+  top: 1.563rem;
+  right: 0;
+  left: 0;
+
+  font-weight: 400;
+  font-size: 0.688rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+
+.header .nav-menu ul > * {
+  margin-left: 1.5rem;
+}
+
+.header .nav-menu a:hover {
+  color: #fff;
+
+  cursor: pointer;
+}
+
+.header .nav-menu a:active {
+  color: #fff;
+}
+
+.header .logo {
+  margin-right: 4.125rem;
+}
+
+.header .logo-image {
+  width: 1.5rem;
+  margin-right: 1rem;
+}
+
+.header .logo-title {
+  padding: 0;
+}
+
+.header .search-input {
+  min-width: 15.5rem;
+  height: 1.563rem;
+  margin: 0 0 0 auto;
+  padding: 0.313rem 0.625rem;
+
+  color: #fff;
+
+  background: #3c3b3d;
+  border: none;
+  border-radius: 3.125rem;
+}
+
+.header .search-input::placeholder {
+  color: #757575;
+  text-transform: uppercase;
+}
+
+@media (max-width: 425px) {
+  .header .nav-menu ul {
+    flex-direction: column;
+  }
+
+  .header .nav-menu ul li {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header > * {
+    flex: 1 1 100%;
+  }
+
+  .header .logo {
+    margin-bottom: 1rem;
+  }
+
+  .header .nav-menu {
+    margin-bottom: 1.125rem;
+  }
+}
+
+.footer {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+.footer a {
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.5rem;
+  text-transform: inherit;
+}
+
+.footer .column-links .links-container {
+  margin: 0 -1.25rem;
+  padding: 3rem 0;
+}
+
+.footer .column-links .links-container > * {
+  flex: 1 1 200px;
+  margin: 0 1.25rem 1.5rem;
+}
+
+@media (max-width: 425px) {
+  .footer .column-links .links-container {
+    margin: 0 -1.25rem;
+  }
+
+  .footer .column-links .links-container > * {
+    flex: 1 1 200px;
+    margin: 0 1.25rem 1rem;
+  }
+}
+
+.footer .column-links .links-container .footer-title {
+  display: inline-block;
+  padding: 0.938rem 0;
+
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.688rem;
+  text-transform: uppercase;
+}
+
+.footer .column-links .links-container li {
+  white-space: nowrap;
+}
+
+.footer .column-links .links-container img {
+  margin-right: 1.2rem;
+}
+
+.footer hr {
+  margin: 0;
+
+  border: 0.063rem solid #cacaca;
+  border-radius: 0;
+}
+
+.footer .bottom-links ul {
+  padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .footer .bottom-links ul {
+    flex-direction: column;
+  }
+}
+
+.footer .bottom-links ul li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer .bottom-links ul li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
 .home-page-description {
   padding: 12.5rem 0;
 
@@ -511,86 +674,5 @@ a {
 @media (max-width: 425px) {
   .page-news .news-body-special-margin {
     margin-top: 1rem;
-  }
-}
-
-.header {
-  position: absolute;
-  top: 1.563rem;
-  right: 0;
-  left: 0;
-
-  font-weight: 400;
-  font-size: 0.688rem;
-  line-height: 1rem;
-  text-transform: uppercase;
-}
-
-.header .nav-menu ul > * {
-  margin-left: 1.5rem;
-}
-
-.header .nav-menu a:hover {
-  color: #fff;
-
-  cursor: pointer;
-}
-
-.header .nav-menu a:active {
-  color: #fff;
-}
-
-.header .logo {
-  margin-right: 4.125rem;
-}
-
-.header .logo-image {
-  width: 1.5rem;
-  margin-right: 1rem;
-}
-
-.header .logo-title {
-  padding: 0;
-}
-
-.header .search-input {
-  min-width: 15.5rem;
-  height: 1.563rem;
-  margin: 0 0 0 auto;
-  padding: 0.313rem 0.625rem;
-
-  color: #fff;
-
-  background: #3c3b3d;
-  border: none;
-  border-radius: 3.125rem;
-}
-
-.header .search-input::placeholder {
-  color: #757575;
-  text-transform: uppercase;
-}
-
-@media (max-width: 425px) {
-  .header .nav-menu ul {
-    flex-direction: column;
-  }
-
-  .header .nav-menu ul li {
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .header > * {
-    flex: 1 1 100%;
-  }
-
-  .header .logo {
-    margin-bottom: 1rem;
-  }
-
-  .header .nav-menu {
-    margin-bottom: 1.125rem;
   }
 }
