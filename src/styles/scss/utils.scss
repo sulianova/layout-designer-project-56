@@ -49,8 +49,8 @@
   }
 }
 
-@mixin set-links-container($x, $y, $item-size) {
-  margin: 0 px-to-rem(-$x);
+@mixin set-box($x, $y, $item-size) {
+  margin: 0 px-to-rem(-$x) px-to-rem(-$y);
 
   & > * {
     flex: 1 1 $item-size;

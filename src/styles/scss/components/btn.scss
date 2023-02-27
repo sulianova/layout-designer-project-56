@@ -17,6 +17,14 @@ $btn-colors: (
   cursor: pointer;
 }
 
+.btn-adapt {
+  width: max-content;
+
+  @include set-media(xxs) {
+    width: auto;
+  }
+}
+
 @each $color-name, $color in $btn-colors {
   .btn-#{$color-name} {
     color: $white;

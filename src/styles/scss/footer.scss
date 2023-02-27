@@ -7,12 +7,12 @@
   }
 
   & .column-links {
-    & .links-container {
-      @include set-links-container(20px, 24px, 200px);
-      padding: 3rem 0;
+    & .box {
+      @include set-box(20px, 15px, 200px);
+      padding: 3rem 0 4.5rem;
 
-      @media (max-width: 425px) {
-        @include set-links-container(20px, 16px, 200px);
+      @include set-media(sm) {
+        @include set-box(20px, 16px, 200px);
       }
 
       .footer-title {
@@ -39,7 +39,7 @@
   }
 
   & .bottom-links ul {
-    padding: 2rem 0;
+    padding: 2.5rem 0;
 
     @include set-media(md) {
       flex-direction: column;
