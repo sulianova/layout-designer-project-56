@@ -60,10 +60,11 @@
 
 @mixin set-icon($width, $height, $left, $bottom) {
   &::before {
+    bottom: $bottom;
+    left: px-to-rem($left);
+
     width: px-to-rem($width);
     height: px-to-rem($height);
-    left: px-to-rem($left);
-    bottom: $bottom;
   }
 }
 
@@ -71,7 +72,7 @@
   @each $name in $icons {
     .icon-#{$name} {
       &::before {
-        background-image: url('../../images/#{$name}.svg');
+        background-image: url("../../images/#{$name}.svg");
       }
     }
   }
