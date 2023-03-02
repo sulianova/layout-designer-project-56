@@ -6,9 +6,39 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>layout-designer-project-56 by Sulianova</title>
 
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/css/style.css">
 </head>
 <body>
+
+  <header class="header container d-flex align-items-center flex-wrap">
+    <div class="logo d-flex align-items-center">
+      <img class="logo-image" src="images/logo.svg" alt="Логотип Music Box" />
+      <span class="logo-title color-white align-items-center">music box</span>
+    </div>
+
+    <nav class="nav-menu">
+      <ul class="d-flex color-dark-gray">
+        <li><a href="index.html">главная</a></li>
+        <li><a href="artist.html">каталог</a></li>
+        <li><a class="active" href="artists.html">исполнители</a></li>
+        <li><a href="artist.html">контакты</a></li>
+      </ul>
+    </nav>
+
+    <input name="search" id="search" class="search-input" type="search" placeholder="поиск..."  />
+    <label class="sr-only" for="search">поиск по сайту</label>
+  </header>
+
+  <section id= "page-description"  class="artist-page-description d-flex">
+    <div class="container align-self-end">
+      <h1>Morten Harket</h1>
+      <p>24 875 поклонников</p>
+      <div class="box d-flex flex-wrap">
+        <button class="banner-btn btn btn-purple icon icon-play-button">Микс</button>
+        <button class="banner-btn btn btn-red icon icon-heart">В избранное</button>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>

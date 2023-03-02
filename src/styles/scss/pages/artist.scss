@@ -1,0 +1,35 @@
+
+.artist-page-description {
+  padding: px-to-rem(200px) 0 px-to-rem(224px);
+
+  @include set-bg-image('Morten Harket', png);
+
+  h1 {
+    margin: px-to-rem(48px) 0 0;
+
+    @include set-media(sm) {
+      margin: px-to-rem(24px) 0 0;
+    }
+
+  }
+
+  p {
+    margin: px-to-rem(16px) 0 px-to-rem(50px);
+  }
+
+  .box {
+    @include set-box(24px, 24px, 200px);
+    max-width: px-to-rem(448px);
+
+    @include set-media(sm) {
+      max-width: px-to-rem(224px);
+    }
+
+    .banner-btn {
+      @include set-typography(12.8px, 22px, normal, uppercase);
+      @include set-icon(20px, 20px, 30px, calc(50% - 10px));
+      justify-content: start;
+      padding: px-to-rem(20px) px-to-rem(30px) px-to-rem(20px) px-to-rem(66px) ;
+    }
+  }
+}

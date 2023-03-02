@@ -77,8 +77,9 @@ a {
 }
 
 .container {
-  max-width: px-to-rem(1240px);
 
+  width: 100%;
+  max-width: px-to-rem(1240px);
   margin: 0 auto;
   padding: 0 px-to-rem(20px);
 }

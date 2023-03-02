@@ -8,7 +8,7 @@
 
   & .column-links {
     & .box {
-      @include set-box(20px, 15px, 200px);
+      @include set-box(40px, 15px, 200px);
       padding: 3rem 0 4.5rem;
 
       @include set-media(sm) {

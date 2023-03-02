@@ -50,10 +50,29 @@
 }
 
 @mixin set-box($x, $y, $item-size) {
-  margin: 0 px-to-rem(-$x) px-to-rem(-$y);
+  margin: 0 0 px-to-rem(-$y) px-to-rem(-$x);
 
   & > * {
     flex: 1 1 $item-size;
-    margin: 0 px-to-rem($x) px-to-rem($y);
+    margin: 0 0 px-to-rem($y) px-to-rem($x);
+  }
+}
+
+@mixin set-icon($width, $height, $left, $bottom) {
+  &::before {
+    width: px-to-rem($width);
+    height: px-to-rem($height);
+    left: px-to-rem($left);
+    bottom: $bottom;
+  }
+}
+
+@mixin set-icon-images {
+  @each $name in $icons {
+    .icon-#{$name} {
+      &::before {
+        background-image: url('../../images/#{$name}.svg');
+      }
+    }
   }
 }
