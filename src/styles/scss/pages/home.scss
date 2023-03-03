@@ -66,6 +66,11 @@
 }
 
 .page-news {
+
+  p {
+    color: $dark-gray;
+  }
+  
   .flex-container {
     flex: 1 1 575px;
     justify-content: space-between;
@@ -125,6 +130,7 @@
 
   p {
     @include set-typography(16px, 24px);
+    color: $dark-gray;
     padding-top: 1rem;
   }
 

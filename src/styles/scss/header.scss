@@ -53,6 +53,7 @@ $header-placeholder: #757575;
 
   .search-input::placeholder {
     color: $header-placeholder;
+
     @include set-typography(13.3px, 15px, 400, uppercase);
   }
 
