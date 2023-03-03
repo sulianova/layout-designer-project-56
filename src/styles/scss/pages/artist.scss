@@ -44,3 +44,17 @@
   }
 
 }
+
+.alboms .box {
+  @include set-box(50px, 25px, 250px);
+  margin-right: px-to-rem(50px);
+
+  @include set-media(sm) {
+    @include set-box(48px, 25px, 137px);
+    margin-right: px-to-rem(48px);
+  }
+}
+
+.discography .empty {
+  margin-bottom: 0;
+}
