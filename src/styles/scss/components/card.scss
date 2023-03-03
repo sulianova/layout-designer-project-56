@@ -6,7 +6,8 @@
   cursor: pointer;
 
   &-title {
-    padding: 1.5rem 0 px-to-rem(200px);
+    padding: px-to-rem(24px) 0 px-to-rem(200px);
+    @include set-typography(24px, 36px, 400, uppercase);
   }
 
   &-price {
@@ -19,15 +20,15 @@
   }
 
   .describtion {
-    @include set-typography(12.9px, 19.4px, 400);
-    margin: 4rem 0;
+    @include set-typography(12.8px, 19.2px, 400);
+    margin: px-to-rem(62px) 0;
   }
 
   @include set-media(sm) {
 
     &-title {
       @include set-typography(16px, 24px, 400, uppercase);
-      padding: 1rem 0 px-to-rem(200px);
+      padding: px-to-rem(16px) 0 px-to-rem(200px);
     }
   }
 }

@@ -156,6 +156,10 @@ a {
   padding-top: 2.5rem;
 }
 
+.pt-43 {
+  padding-top: 2.688rem;
+}
+
 .pt-100 {
   padding-top: 6.25rem;
 }
@@ -178,6 +182,14 @@ a {
 
 .pb-48 {
   padding-bottom: 3rem;
+}
+
+.pb-46 {
+  padding-bottom: 2.875rem;
+}
+
+.pb-43 {
+  padding-bottom: 2.688rem;
 }
 
 .m-a {
@@ -259,6 +271,10 @@ a {
 }
 .card-title {
   padding: 1.5rem 0 12.5rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  text-transform: uppercase;
 }
 .card-price {
   font-weight: 400;
@@ -275,10 +291,10 @@ a {
 }
 .card .describtion {
   font-weight: 400;
-  font-size: 0.806rem;
-  line-height: 1.213rem;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
   text-transform: inherit;
-  margin: 4rem 0;
+  margin: 3.875rem 0;
 }
 @media (max-width: 425px) {
   .card-title {
@@ -632,9 +648,9 @@ a {
   margin: 0;
   font-weight: normal;
   font-size: 0.831rem;
-  line-height: 0.956rem;
+  line-height: 0.938rem;
   text-transform: uppercase;
-  padding: 1.375rem auto;
+  padding: 1.25rem 1.875rem;
 }
 @media (max-width: 425px) {
   .home-page-description-btn {
@@ -642,22 +658,30 @@ a {
   }
 }
 
-.page-pricing .flex-container {
-  column-gap: 3.125rem;
-  row-gap: 3.125rem;
+.page-pricing .box {
+  margin-bottom: 0rem;
+  margin-left: -3.125rem;
 }
-.page-pricing .flex-container > * {
-  max-width: 22.875rem;
-}
-@media (max-width: 425px) {
-  .page-pricing .flex-container > * {
-    max-width: 23.375rem;
-  }
+.page-pricing .box > * {
+  flex: 1 1 366px;
+  margin-bottom: 0rem;
+  margin-left: 3.125rem;
 }
 @media (max-width: 425px) {
-  .page-pricing .flex-container {
+  .page-pricing .box {
+    margin-bottom: -3.125rem;
+    margin-left: 0rem;
+    min-width: 23.375rem;
     justify-content: center;
   }
+  .page-pricing .box > * {
+    flex: 1 1 374px;
+    margin-bottom: 3.125rem;
+    margin-left: 0rem;
+  }
+}
+.page-pricing h2 {
+  margin-bottom: 3rem;
 }
 .page-pricing .bg-free {
   background: url("../../images/subscribe_1.png") no-repeat center;

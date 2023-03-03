@@ -22,8 +22,8 @@
     min-height: px-to-rem(60px);
     margin: 0;
 
-    @include set-typography(13.3px, 15.29px, normal, uppercase);
-    padding: px-to-rem(22px) auto;
+    @include set-typography(13.3px, 15px, normal, uppercase);
+    padding: px-to-rem(20px) px-to-rem(30px);
 
     @include set-media(sm) {
       margin-top: 1.5rem;
@@ -32,21 +32,20 @@
 }
 
 .page-pricing {
-  .flex-container {
-    column-gap: px-to-rem(50px);
-    row-gap: px-to-rem(50px);
 
-    & > * {
-      max-width: px-to-rem(366px);
-
-      @include set-media(sm) {
-        max-width: px-to-rem(374px);
-      }
-    }
+  .box {
+    @include set-box(50px, 0px, 366px);
 
     @include set-media(sm) {
+      @include set-box(0px, 50px, 374px);
+      min-width: px-to-rem(374px);
+
       justify-content: center;
     }
+  }
+
+  h2 {
+    margin-bottom: px-to-rem(48px);
   }
 
   @include set-card-bg();
