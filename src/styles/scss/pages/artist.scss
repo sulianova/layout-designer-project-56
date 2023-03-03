@@ -33,3 +33,14 @@
     }
   }
 }
+
+.tracks .box {
+  @include set-box(50px, 25px, 374px);
+  margin-right: px-to-rem(50px);
+
+  @include set-media(sm) {
+    @include set-box(50px, 25px, 374px);
+    margin-right: 0;
+  }
+
+}

@@ -35,6 +35,10 @@
   justify-content: space-between;
 }
 
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
 .flex-column {
   flex-direction: column;
 }
@@ -53,6 +57,10 @@
   padding-top: px-to-rem(100px);
 }
 
+.pb-100 {
+  padding-bottom: px-to-rem(100px);
+}
+
 .pb-24 {
   padding-bottom: px-to-rem(24px);
 }
@@ -63,6 +71,10 @@
 
 .pb-50 {
   padding-bottom: px-to-rem(50px);
+}
+
+.pb-48 {
+  padding-bottom: px-to-rem(48px);
 }
 
 .m-a {

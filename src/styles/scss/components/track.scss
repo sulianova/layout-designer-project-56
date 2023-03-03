@@ -1,0 +1,26 @@
+.track {
+  img {
+    width: px-to-rem(55px);
+    height: px-to-rem(55px);
+  }
+
+  &-info {
+    flex: 1 1;
+    margin-left: px-to-rem(16px);
+  }
+
+  &-title {
+    @include set-typography(12.8px, 19.2px, 700, uppercase);
+  }
+
+  &-name {
+    @include set-typography(12.8px, 19.2px, 400);
+    color: $gray;
+  }
+
+  .time {
+    @include set-typography(12.8px, 19.2px, 400);
+    margin: auto 0;
+    color: $gray;
+  }
+}
