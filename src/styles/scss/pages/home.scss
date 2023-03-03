@@ -4,7 +4,7 @@
   @include set-bg-image(banner, png);
 
   @include set-media(sm) {
-    padding: px-to-rem(248px) 0 px-to-rem(200px) 0;
+    padding: px-to-rem(247px) 0 px-to-rem(200px) 0;
   }
 
   p {
@@ -70,7 +70,7 @@
   p {
     color: $dark-gray;
   }
-  
+
   .flex-container {
     flex: 1 1 575px;
     justify-content: space-between;
