@@ -1,0 +1,20 @@
+.artist {
+  &-name {
+    @include set-typography(18px, 27px, bold);
+    margin-top: px-to-rem(11px);
+  }
+
+  p {
+    @include set-typography(16px, 24px);
+  }
+
+  .image {
+    width: px-to-rem(250px);
+    height: px-to-rem(250px);
+
+    @include set-media(sm) {
+      width: px-to-rem(137px);
+      height: px-to-rem(137px);
+    }
+  }
+}

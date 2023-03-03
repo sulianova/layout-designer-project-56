@@ -495,6 +495,34 @@ a {
   }
 }
 
+.artist-name {
+  margin-top: 0.688rem;
+
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.688rem;
+  text-transform: inherit;
+}
+
+.artist p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-transform: inherit;
+}
+
+.artist .image {
+  width: 15.625rem;
+  height: 15.625rem;
+}
+
+@media (max-width: 425px) {
+  .artist .image {
+    width: 8.563rem;
+    height: 8.563rem;
+  }
+}
+
 .header {
   position: absolute;
   top: 1.563rem;
@@ -953,4 +981,30 @@ a {
 
 .discography .empty {
   margin-bottom: 0;
+}
+
+.similar .box {
+  margin-right: 3.125rem;
+  margin-bottom: -1.563rem;
+  margin-left: -3.125rem;
+}
+
+.similar .box > * {
+  flex: 1 1 250px;
+  margin-bottom: 1.563rem;
+  margin-left: 3.125rem;
+}
+
+@media (max-width: 425px) {
+  .similar .box {
+    margin-right: 3rem;
+    margin-bottom: -1.563rem;
+    margin-left: -3rem;
+  }
+
+  .similar .box > * {
+    flex: 1 1 137px;
+    margin-bottom: 1.563rem;
+    margin-left: 3rem;
+  }
 }
