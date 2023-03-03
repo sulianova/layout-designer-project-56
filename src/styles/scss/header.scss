@@ -39,10 +39,10 @@ $header-placeholder: #757575;
 
   .search-input {
     min-width: px-to-rem(248px);
-    height: px-to-rem(25px);
+    min-height: px-to-rem(25px);
     margin: 0 0 0 auto;
 
-    padding: px-to-rem(5px) px-to-rem(10px);
+    padding: px-to-rem(4px) px-to-rem(10px);
 
     color: $white;
 
@@ -53,7 +53,7 @@ $header-placeholder: #757575;
 
   .search-input::placeholder {
     color: $header-placeholder;
-    text-transform: uppercase;
+    @include set-typography(13.3px, 15px, 400, uppercase);
   }
 
   @include set-media(sm) {

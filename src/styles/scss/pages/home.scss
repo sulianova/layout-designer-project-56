@@ -4,11 +4,12 @@
   @include set-bg-image(banner, png);
 
   @include set-media(sm) {
-    padding: px-to-rem(250px) 0 px-to-rem(200px) 0;
+    padding: px-to-rem(248px) 0 px-to-rem(200px) 0;
   }
 
   p {
-    margin-top: px-to-rem(31px);
+    margin-top: px-to-rem(33px);
+    @include set-typography(16px, 24px, normal);
 
     @include set-media(sm) {
       margin-top: px-to-rem(16px);
@@ -18,10 +19,11 @@
   &-btn {
     flex: 1 1 px-to-rem(570px);
     max-width: px-to-rem(570px);
-    min-height: px-to-rem(57px);
+    min-height: px-to-rem(60px);
     margin: 0;
 
-    @include set-typography(13.3px, 15px, normal, uppercase);
+    @include set-typography(13.3px, 15.29px, normal, uppercase);
+    padding: px-to-rem(22px) auto;
 
     @include set-media(sm) {
       margin-top: 1.5rem;

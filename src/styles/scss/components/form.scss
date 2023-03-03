@@ -9,9 +9,10 @@
     min-height: px-to-rem(50px);
 
     margin-bottom: 1.5rem;
-    margin-top: 1rem;
-    padding: 0 0 0 px-to-rem(20px);
+    margin-top: px-to-rem(17px);
+    padding: px-to-rem(15px) 0 px-to-rem(14px) px-to-rem(20px);
 
+    @include set-typography(15px, 15px, 700);
     color: $white;
 
     background: transparent;
