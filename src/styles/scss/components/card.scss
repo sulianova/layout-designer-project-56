@@ -6,12 +6,17 @@
   cursor: pointer;
 
   &-title {
-    padding: px-to-rem(24px) 0 px-to-rem(200px);
     @include set-typography(24px, 36px, 400, uppercase);
+    padding: px-to-rem(24px) 0 px-to-rem(200px);
+
+    @include set-media(sm) {
+      @include set-typography(16px, 24px, 400, uppercase);
+      padding: px-to-rem(16px) 0 px-to-rem(200px);
+    }
   }
 
   &-price {
-    @include set-typography(64px, 64px, 400);
+    @include set-typography(64px, 16px, 400);
   }
 
   .currency {
@@ -21,14 +26,7 @@
 
   .describtion {
     @include set-typography(12.8px, 19.2px, 400);
-    margin: px-to-rem(62px) 0;
+    margin: px-to-rem(64px) 0;
   }
 
-  @include set-media(sm) {
-
-    &-title {
-      @include set-typography(16px, 24px, 400, uppercase);
-      padding: px-to-rem(16px) 0 px-to-rem(200px);
-    }
-  }
 }
