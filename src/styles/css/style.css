@@ -683,14 +683,20 @@ a {
 .page-pricing .bg-free {
   background: url("../../images/subscribe_1.png") no-repeat center;
   background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 .page-pricing .bg-standard {
   background: url("../../images/subscribe_2.png") no-repeat center;
   background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 .page-pricing .bg-premium {
   background: url("../../images/subscribe_3.png") no-repeat center;
   background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 .page-pricing-btn {
   flex: 1 1 20.375rem;
