@@ -42,11 +42,11 @@
   }
 
   h2 {
-    margin-bottom: px-to-rem(50px);
+    margin-bottom: px-to-rem(48px);
   }
 
   .bottom-describtion {
-    padding-top: px-to-rem(43px);
+    padding-top: px-to-rem(40px);
   }
 
   @include set-card-bg();
@@ -54,9 +54,9 @@
   &-btn {
     flex: 1 1 px-to-rem(326px);
     max-width: px-to-rem(326px);
-    min-height: px-to-rem(66px);
+    min-height: px-to-rem(64px);
 
-    margin: 2.5rem 0 0 0;
+    margin: px-to-rem(39px) 0 0 0;
 
     background: transparent;
     border: px-to-rem(1px) solid $white;
