@@ -2,3 +2,7 @@
 Makefile
 package-lock.json
 package.json
+.editorconfig
+.gitignore
+.htmlhintrc
+.stylelintrc
