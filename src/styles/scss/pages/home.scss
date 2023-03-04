@@ -48,6 +48,10 @@
     margin-bottom: px-to-rem(48px);
   }
 
+  .bottom-describtion {
+    padding-top: px-to-rem(43px);
+  }
+
   @include set-card-bg();
 
   &-btn {

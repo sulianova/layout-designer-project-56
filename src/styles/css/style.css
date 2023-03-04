@@ -683,6 +683,9 @@ a {
 .page-pricing h2 {
   margin-bottom: 3rem;
 }
+.page-pricing .bottom-describtion {
+  padding-top: 2.688rem;
+}
 .page-pricing .bg-free {
   background: url("../../images/subscribe_1.png") no-repeat center;
   background-size: cover;
