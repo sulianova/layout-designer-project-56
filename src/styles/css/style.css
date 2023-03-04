@@ -316,10 +316,10 @@ a {
   min-height: 3.125rem;
   margin-bottom: 1.5rem;
   margin-top: 1.063rem;
-  padding: 0.938rem 0 0.875rem 1.25rem;
+  padding-left: 1.25rem;
   font-weight: 700;
   font-size: 0.938rem;
-  line-height: 0.938rem;
+  line-height: 1.026rem;
   text-transform: inherit;
   color: #fff;
   background: transparent;
@@ -338,7 +338,6 @@ a {
   }
   .form-input:last-child {
     margin-top: 0;
-    margin-bottom: 0;
   }
 }
 
@@ -648,14 +647,9 @@ a {
   margin: 0;
   font-weight: normal;
   font-size: 0.831rem;
-  line-height: 0.938rem;
+  line-height: 0.956rem;
   text-transform: uppercase;
   padding: 1.25rem 1.875rem;
-}
-@media (max-width: 425px) {
-  .home-page-description-btn {
-    margin-top: 1.5rem;
-  }
 }
 
 .page-pricing .box {

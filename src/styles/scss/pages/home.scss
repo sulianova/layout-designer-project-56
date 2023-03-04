@@ -22,12 +22,9 @@
     min-height: px-to-rem(60px);
     margin: 0;
 
-    @include set-typography(13.3px, 15px, normal, uppercase);
+    @include set-typography(13.3px, 15.29px, normal, uppercase);
     padding: px-to-rem(20px) px-to-rem(30px);
 
-    @include set-media(sm) {
-      margin-top: 1.5rem;
-    }
   }
 }
 
