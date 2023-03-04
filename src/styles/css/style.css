@@ -288,7 +288,7 @@ a {
 .card-price {
   font-weight: 400;
   font-size: 4rem;
-  line-height: 1rem;
+  line-height: 4rem;
   text-transform: inherit;
 }
 .card .currency {
@@ -678,7 +678,7 @@ a {
   margin-bottom: 3rem;
 }
 .page-pricing .bottom-describtion {
-  padding-top: 2.5rem;
+  padding-top: 2.438rem;
 }
 .page-pricing .bg-free {
   background: url("../../images/subscribe_1.png") no-repeat center;
