@@ -16,7 +16,7 @@
   }
 
   &-price {
-    @include set-typography(64px, 64px, 400);
+    @include set-typography(64px, 16px, 400);
   }
 
   .currency {
