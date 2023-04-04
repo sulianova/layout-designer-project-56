@@ -33,7 +33,7 @@
 }
 
 @mixin set-bg-image($image-name, $extend) {
-  background: url("../../images/#{$image-name}.#{$extend}") no-repeat center;
+  background: url("../images/#{$image-name}.#{$extend}") no-repeat center;
   background-size: cover;
 }
 
@@ -78,7 +78,7 @@
   @each $name in $icons {
     .icon-#{$name} {
       &::before {
-        background-image: url("../../images/#{$name}.svg");
+        background-image: url("../images/#{$name}.svg");
       }
     }
   }

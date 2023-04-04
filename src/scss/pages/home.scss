@@ -41,7 +41,7 @@
   }
 
   .bg-free {
-    background-image: url("../../images/subscribe_1.png");
+    background-image: url("../images/subscribe_1.png");
     width: 374px;
     max-width: 100%;
     height: 100%;
@@ -51,7 +51,7 @@
   }
 
   .bg-standard {
-    background-image: url("../../images/subscribe_2.png");
+    background-image: url("../images/subscribe_2.png");
     width: 374px;
     max-width: 100%;
     height: 100%;
@@ -61,7 +61,7 @@
   }
 
   .bg-premium {
-    background-image: url("../../images/subscribe_3.png");
+    background-image: url("../images/subscribe_3.png");
     width: 374px;
     max-width: 100%;
     height: 100%;
@@ -72,7 +72,7 @@
 
  @include set-media(sm) {
     .bg-free {
-      background-image: url("../../images/Free-Bg.png");
+      background-image: url("../images/Free-Bg.png");
       width: 374px;
       max-width: 100%;
       height: 100%;
@@ -82,7 +82,7 @@
     }
 
     .bg-standard {
-      background-image: url("../../images/Standart-Bg.png");
+      background-image: url("../images/Standart-Bg.png");
       width: 374px;
       max-width: 100%;
       height: 100%;
@@ -92,7 +92,7 @@
     }
 
     .bg-premium {
-      background-image: url("../../images/Premium-Bg.png");
+      background-image: url("../images/Premium-Bg.png");
       width: 374px;
       max-width: 100%;
       height: 100%;
