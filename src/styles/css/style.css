@@ -666,6 +666,7 @@ a {
     margin-bottom: -3.125rem;
     margin-left: 0rem;
     min-width: 23.375rem;
+    max-height: 37.188rem;
     justify-content: center;
   }
   .page-pricing .box > * {

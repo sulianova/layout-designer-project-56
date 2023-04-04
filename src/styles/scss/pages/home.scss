@@ -36,6 +36,7 @@
     @include set-media(sm) {
       @include set-box(0px, 50px, 374px);
       min-width: px-to-rem(374px);
+      max-height: px-to-rem(595px);
 
       justify-content: center;
     }
