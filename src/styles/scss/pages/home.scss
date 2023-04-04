@@ -36,7 +36,6 @@
     @include set-media(sm) {
       @include set-box(0px, 50px, 374px);
       min-width: px-to-rem(374px);
-      max-height: px-to-rem(595px);
 
       justify-content: center;
     }
@@ -47,7 +46,7 @@
   }
 
   .bottom-describtion {
-    padding-top: px-to-rem(39px);
+    padding-top: px-to-rem(42px);
   }
 
   @include set-card-bg();
@@ -55,7 +54,7 @@
   &-btn {
     flex: 1 1 px-to-rem(326px);
     max-width: px-to-rem(326px);
-    min-height: px-to-rem(64px);
+    min-height: px-to-rem(66px);
 
     margin: px-to-rem(40px) 0 0 0;
 

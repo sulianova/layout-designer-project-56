@@ -17,15 +17,17 @@
 
   &-price {
     @include set-typography(64px, 64px, 400);
+    position: relative;
   }
 
   .currency {
     @include set-typography(32px, 48px, 400, uppercase);
     padding-left: 1rem;
+    vertical-align: top;
   }
 
   .describtion {
-    @include set-typography(12.8px, 19.2px, 400);
+    @include set-typography(13px, 19px, 400);
     margin: px-to-rem(64px) 0;
   }
 
