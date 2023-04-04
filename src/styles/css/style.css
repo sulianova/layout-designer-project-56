@@ -265,6 +265,7 @@ a {
 
 .card {
   padding: 0 1.5rem;
+  max-width: 368px;
   border: none;
   border-radius: 1rem;
   cursor: pointer;
@@ -301,10 +302,8 @@ a {
   vertical-align: top;
 }
 .card .describtion {
-  font-weight: 400;
-  font-size: 0.813rem;
-  line-height: 1.188rem;
-  text-transform: inherit;
+  font-size: 13px;
+  line-height: 19px;
   margin: 4rem 0;
 }
 
@@ -622,7 +621,7 @@ a {
 
 .home-page-description {
   padding: 12.5rem 0;
-  background: url("../../images/banner.png") center;
+  background: url("../../images/banner.png") no-repeat center;
   background-size: cover;
 }
 @media (max-width: 425px) {
@@ -676,23 +675,67 @@ a {
     margin-left: 0rem;
   }
 }
+.page-pricing .bg-free {
+  background-image: url("../../images/subscribe_1.png");
+  width: 374px;
+  max-width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.page-pricing .bg-standard {
+  background-image: url("../../images/subscribe_2.png");
+  width: 374px;
+  max-width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.page-pricing .bg-premium {
+  background-image: url("../../images/subscribe_3.png");
+  width: 374px;
+  max-width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 425px) {
+  .page-pricing .bg-free {
+    background-image: url("../../images/Free-Bg.png");
+    width: 374px;
+    max-width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .page-pricing .bg-standard {
+    background-image: url("../../images/Standart-Bg.png");
+    width: 374px;
+    max-width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .page-pricing .bg-premium {
+    background-image: url("../../images/Premium-Bg.png");
+    width: 374px;
+    max-width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
 .page-pricing h2 {
   margin-bottom: 3rem;
 }
 .page-pricing .bottom-describtion {
   padding-top: 2.625rem;
-}
-.page-pricing .bg-free {
-  background: url("../../images/subscribe_1.png") center;
-  background-size: cover;
-}
-.page-pricing .bg-standard {
-  background: url("../../images/subscribe_2.png") center;
-  background-size: cover;
-}
-.page-pricing .bg-premium {
-  background: url("../../images/subscribe_3.png") center;
-  background-size: cover;
 }
 .page-pricing-btn {
   flex: 1 1 20.375rem;
@@ -788,7 +831,7 @@ a {
 
 .artist-page-description {
   padding: 12.5rem 0 14rem;
-  background: url("../../images/Morten Harket.png") center;
+  background: url("../../images/Morten Harket.png") no-repeat center;
   background-size: cover;
 }
 .artist-page-description h1 {

@@ -1,6 +1,7 @@
 .card {
   padding: 0 1.5rem;
-
+  max-width: 368px;
+  
   border: none;
   border-radius: 1rem;
   cursor: pointer;
@@ -27,7 +28,9 @@
   }
 
   .describtion {
-    @include set-typography(13px, 19px, 400);
+    // @include set-typography(13px, 19px, 400);
+    font-size: 13px;
+    line-height: 19px;
     margin: px-to-rem(64px) 0;
   }
 

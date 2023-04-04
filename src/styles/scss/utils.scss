@@ -33,7 +33,7 @@
 }
 
 @mixin set-bg-image($image-name, $extend) {
-  background: url("../../images/#{$image-name}.#{$extend}") center;
+  background: url("../../images/#{$image-name}.#{$extend}") no-repeat center;
   background-size: cover;
 }
 
@@ -45,6 +45,10 @@
   @each $class, $name in $subscriptions {
     .bg-#{$class} {
       @include set-bg-image($name, "png");
+
+      // width: 374px;
+      // max-width: 100%;
+      // height: 100%;
     }
   }
 }

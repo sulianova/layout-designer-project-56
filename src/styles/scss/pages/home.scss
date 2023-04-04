@@ -36,8 +36,69 @@
     @include set-media(sm) {
       @include set-box(0px, 50px, 374px);
       min-width: px-to-rem(374px);
-
       justify-content: center;
+    }
+  }
+
+  .bg-free {
+    background-image: url("../../images/subscribe_1.png");
+    width: 374px;
+    max-width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bg-standard {
+    background-image: url("../../images/subscribe_2.png");
+    width: 374px;
+    max-width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bg-premium {
+    background-image: url("../../images/subscribe_3.png");
+    width: 374px;
+    max-width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+ @include set-media(sm) {
+    .bg-free {
+      background-image: url("../../images/Free-Bg.png");
+      width: 374px;
+      max-width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .bg-standard {
+      background-image: url("../../images/Standart-Bg.png");
+      width: 374px;
+      max-width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .bg-premium {
+      background-image: url("../../images/Premium-Bg.png");
+      width: 374px;
+      max-width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
   }
 
@@ -49,7 +110,11 @@
     padding-top: px-to-rem(42px);
   }
 
-  @include set-card-bg();
+  // @include set-card-bg();
+
+  // @include set-media(md) {
+  //   @include set-card-bg();
+  // }
 
   &-btn {
     flex: 1 1 px-to-rem(326px);
