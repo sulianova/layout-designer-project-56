@@ -31,7 +31,7 @@
 .page-pricing {
   .box {
     @include set-box(50px, 0, 366px);
-    
+
     @include set-media(sm) {
       @include set-box(0, 50px, 374px);
       min-width: px-to-rem(374px);
