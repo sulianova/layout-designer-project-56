@@ -1,10 +1,10 @@
-$icons: ('play-button', 'heart');
+$icons: ("play-button", "heart");
 
 .icon {
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
   }
 }
@@ -21,7 +21,7 @@ $icons: ('play-button', 'heart');
 @each $name in $icons {
   .icon-#{$name} {
     &::before {
-      background-image: url('../images/#{$name}.svg');
+      background-image: url("../images/#{$name}.svg");
       filter: invert(1);
     }
   }

@@ -1,7 +1,7 @@
 .form {
   max-width: px-to-rem(570px);
 
-  margin: 0 auto 0;
+  margin: 0 auto;
 
   &-input {
     flex: 1 1 px-to-rem(270px);
@@ -19,7 +19,6 @@
     background: transparent;
     border: px-to-rem(2px) solid $dark-gray;
     border-radius: px-to-rem(3px);
-
   }
 
   &-input:not(:last-child) {
