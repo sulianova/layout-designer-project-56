@@ -9,6 +9,7 @@
 
   p {
     margin-top: px-to-rem(33px);
+
     @include set-typography(16px, 24px, normal);
 
     @include set-media(sm) {
@@ -24,17 +25,14 @@
 
     @include set-typography(13.3px, 15.29px, normal, uppercase);
     padding: px-to-rem(20px) px-to-rem(30px);
-
   }
 }
 
 .page-pricing {
-
   .box {
-    @include set-box(50px, 0px, 366px);
-
+    @include set-box(50px, 0, 366px);
     @include set-media(sm) {
-      @include set-box(0px, 50px, 374px);
+      @include set-box(0, 50px, 374px);
       min-width: px-to-rem(374px);
       justify-content: center;
     }
@@ -70,7 +68,7 @@
     background-size: cover;
   }
 
- @include set-media(sm) {
+  @include set-media(sm) {
     .bg-free {
       background-image: url("../images/Free-Bg.png");
       width: 374px;
@@ -131,7 +129,6 @@
 }
 
 .page-news {
-
   p {
     color: $dark-gray;
   }
@@ -149,7 +146,7 @@
     margin-bottom: px-to-rem(65px);
   }
 
-  .news-image  {
+  .news-image {
     width: 100%;
     height: px-to-rem(286px);
 
@@ -161,7 +158,6 @@
   &-btn {
     max-width: px-to-rem(135px);
     min-height: px-to-rem(53px);
-    
     margin: 0;
     padding: 0 px-to-rem(30px);
 
@@ -170,7 +166,6 @@
 
     background: transparent;
     border: px-to-rem(1px) solid $dark-gray;
-
   }
 
   .news-body-special-margin {
@@ -180,13 +175,11 @@
       margin-top: px-to-rem(16px);
     }
   }
-
 }
 
 .mobile {
-  
   .box {
-    @include set-box(20px, 0px, 600px);
+    @include set-box(20px, 0, 600px);
 
     @include set-media(md) {
       flex-wrap: wrap-reverse;

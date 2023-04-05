@@ -1,8 +1,7 @@
-
 .artist-page-description {
   padding: px-to-rem(200px) 0 px-to-rem(224px);
 
-  @include set-bg-image('Morten Harket', png);
+  @include set-bg-image("Morten Harket", png);
 
   h1 {
     margin: px-to-rem(48px) 0 0;
@@ -10,7 +9,6 @@
     @include set-media(sm) {
       margin: px-to-rem(24px) 0 0;
     }
-
   }
 
   p {
@@ -29,7 +27,7 @@
       @include set-typography(12.8px, 22px, normal, uppercase);
       @include set-icon(20px, 20px, 30px, calc(50% - 10px));
       justify-content: start;
-      padding: px-to-rem(20px) px-to-rem(30px) px-to-rem(20px) px-to-rem(66px) ;
+      padding: px-to-rem(20px) px-to-rem(30px) px-to-rem(20px) px-to-rem(66px);
     }
   }
 }
@@ -42,7 +40,6 @@
     @include set-box(50px, 25px, 374px);
     margin-right: 0;
   }
-
 }
 
 .alboms .box {
@@ -60,11 +57,11 @@
 }
 
 .similar .box {
-    @include set-box(50px, 25px, 250px);
-    margin-right: px-to-rem(50px);
+  @include set-box(50px, 25px, 250px);
+  margin-right: px-to-rem(50px);
 
-    @include set-media(sm) {
-      @include set-box(48px, 25px, 137px);
-      margin-right: px-to-rem(48px);
-    }
+  @include set-media(sm) {
+    @include set-box(48px, 25px, 137px);
+    margin-right: px-to-rem(48px);
   }
+}

@@ -14,10 +14,12 @@
 
   &-title {
     color: $white;
+
     @include set-typography(30px, 45px, normal, capitalize);
 
     @include set-media(sm) {
       margin-top: px-to-rem(48px);
+      
       @include set-typography(16px, 26px, normal, capitalize);
     }
   }
